@@ -1,0 +1,59 @@
+body {
+  background: url();
+}
+
+.simple-form {
+  text-align: center;
+  margin: 100px 600px;
+}
+.hed {
+  color: white;
+  text-align: center;
+  margin-right: 26px;
+  margin-bottom: 29px;
+}
+.registration {
+  margin: auto;
+  background-color: #051019;
+  opacity: 0.5;
+  padding: 50px 0px;
+}
+
+.ph {
+  width: 50px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.butto {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0px;
+}
+
+#phone {
+  width: 196px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0px;
+}
+
+#but {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0px;
+}
+
+#but2 {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0px;
+}
+
+#but {
+  color: white;
+  font-size: 18px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>About Us-shopex</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/3.About_Us.css" />
+    <link rel="stylesheet" href="css/allcss" />
+    <link rel="stylesheet" href="css/1.Main_Theme.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- <a href="index.html">
+          <div class="brand">
+            <h1>shopex</h1>
+          </div>
+        </a> -->
+        <nav>
+          <ul>
+            <li>
+              <div class="logo">
+                <a href="index.html">
+                  <h3>ShopeX</h3>
+                </a>
+              </div>
+            </li>
+            <li>
+              <form class="search-box">
+                <input
+                  type="search"
+                  class="search"
+                  placeholder="Search In Our Products"
+                />
+                <button class="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>Search
+                </button>
+              </form>
+            </li>
+            <li class="home">
+              <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+            </li>
+            <li><a href="5.Feedback.htm" class="log_in">Feedback </a></li>
+            <li><a href="8.contact-us.html" class="C_us"> Contact Us </a></li>
+            <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
+            <li><a class="click">join </a>
+              <div class="list">
+                <a class="log" href="2.Log_Page.html">log In</a>
+                <a class="log" href="4.Registration.html">register</a>
+              </div></li>
+            <li>
+              <a href="#">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+            </li>
+            <li>
+              <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="about">
+      <div class="main">
+        <img src="images/about.jpg" />
+        <div class="about-text">
+          <h1>About Us</h1>
+          <h5><span>Designers</span></h5>
+          <p>
+            We are front-end web developers.We can provide clean code and pixel
+            perfect design. we also make the website more & more interactive
+            with web animations.We make a responsive design which makes your
+            website accessible to all users, regardless of their device.
+            <button class="but" type="button">Let's Talk</button>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="container">
+        <p>join us</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook social"></i>
+          <i class="fa-brands fa-twitter social"></i>
+          <i class="fa-brands fa-instagram social"></i>
+          <i class="fa-solid fa-house social"></i>
+        </div>
+        <p class="copyright">
+          copyright 2022 &copy; <span>Designers</span> All rights reserved
+        </p>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+  </body>
+  <script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "images/dark theme icon/146199.png";
+      } else {
+        icon.src =
+          "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
+      }
+    };
+    let click=document.querySelector('.click');
+  let list =document.querySelector('.list');
+  click.addEventListener("click",()=>{
+    list.classList.toggle('newlist');
+  })
+  </script>
+</html>

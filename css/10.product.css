@@ -1,0 +1,112 @@
+
+
+
+.container9 ul li {
+    display: inline-block;
+
+}
+
+.container9 ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+
+
+
+}
+
+.text {
+    width: 40%;
+    /*to limite the width of the word*/
+    margin-top: 45px;
+
+    color: #fff;
+}
+
+.text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.text p {
+    font-size: 18px;
+    margin: 20px 0;
+
+
+}
+
+.text a {
+    text-decoration: none;
+    background: #fff;
+    color: #111;
+    padding: 8px 15px;
+    border-radius: 20px;
+    position: absolute;
+
+
+}
+
+.image {
+    width: 30%;
+
+}
+
+.image img {
+    width: 250px;
+    margin-left: 152px;
+}
+
+.icons {
+    position: absolute;
+    /*لازم اخد اذن من الاب الي هو continer هكتب عنده position relative */
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50);
+    /*to control on x axis */
+    /*كنت عايز اوسطنها بس كانت بتروح لاخر الشمال عشان كدا استخدمت transform-translate();*/
+    top: 670px;
+}
+
+.icons img {
+    width: 40px;
+    transition: 0.5;
+    /*عشان اعمل تاخير 0.5 ثانيه من لحظه الوقوف عليها */
+
+
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    /*نسبه الحركه لقدام */
+
+}
+
+.inf{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.dis {
+    color: #fff;
+    
+    
+}
+
+.video {
+    margin-left: 152px;
+}

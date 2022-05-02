@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+/* SHOPEX word in the top bar*/
+
+.box {
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.box h2 {
+  color: white;
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.box .input-box {
+  position: relative;
+}
+
+.box .input-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid orange;
+  outline: none;
+  background: transparent;
+}
+
+.box .input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 1.4s;
+}
+
+/* .box .input-box input:focus ~ label,
+.box .input-box input:valid~label 
+{
+  top: -18px;
+  left: 0;
+  color: aqua;
+  font-size: 12px;
+  
+} */
+.eye{
+  position: absolute;
+  right: 1px;
+}
+#hide1{
+  display: none;
+}
+
+.box .sub {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: orange;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.bo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 75px;
+}

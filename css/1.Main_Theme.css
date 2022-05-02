@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-image: var(--wallpaper);
+  background-size: cover;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+/* colors in light mode */
+:root {
+  --main_color: #eee;
+  --seconder_color: #4b7be5;
+  --third_color: #4b7be5;
+  --sub_color: white;
+  --wallpaper: url(../images/daka-dibuja-6-medio-dia.jpg);
+}
+
+/* colors in dark mode*/
+.dark-theme {
+  --main_color: #4b7be5;
+  --seconder_color: orange;
+  --third_color: black;
+  --sub_color: hsl(221deg 95% 60%);
+  --wallpaper: url(../images/daka-dibuja-2-media-noche.jpg);
+}
+
+.clr {
+  clear: both;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+.eye  {
+  color: var(--sub_color);
+}
+
+
+/* SHOPX word in the top bar*/
+.logo h3 {
+  color: var(--seconder_color);
+  margin: -13px 0 10px;
+  font-weight: 300;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
+}
+
+.search {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--sub_color);
+  border: 1px solid var(--third_color);
+  border-radius: 0 20px 20px 0;
+  width: 510px;
+  padding: 7px;
+  /* transition: 0.3s; ==> in body directly */
+}
+/* .logcont{
+  width: 200px;
+  position: relative;
+} */
+.click{
+  /* background:blue; */
+  cursor: pointer;
+}
+.click:hover{
+  /* background: red; */
+}
+.log,.click{
+  
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  display: flex;
+  
+}
+.list{
+  position: absolute;
+  display: none;
+  transform-origin: top;
+
+}
+.newlist{
+display: none !important;
+}
+.newlist1{
+  display: block !important;
+  }
+.log{
+  background-color: rebeccapurple;
+  padding: 20px;
+}
+.log:hover{
+  background: yellowgreen;
+  transform: scale(1.1);
+}
+
+.search:focus {
+  outline: 1px solid var(--seconder_color);
+}
+/* .search:focus {
+  background-color: var(--sub_color);
+  outline: 1px solid var(--seconder_color);
+} */
+
+.search::-webkit-input-placeholder {
+  color: var(--third_color);
+}
+
+.search-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: var(--sub_color);
+  color: var(--third_color);
+  border-bottom: 1px solid var(--third_color);
+  border-top: 1px solid var(--third_color);
+  border-left: 1px solid var(--third_color);
+  border-right: 0;
+  border-radius: 20px 0 0 20px;
+  position: relative;
+  float: left;
+  padding: 7px;
+  /* transition: 0.3s;  ==> in body directly */
+  cursor: pointer;
+}
+
+.search-button i {
+  color: var(--seconder_color);
+}
+
+.search-button:hover {
+  background: var(--seconder_color);
+  color: var(--main_color);
+}
+
+.search-button:hover i {
+  color: var(--main_color);
+}
+
+ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+}
+
+.te {
+  font-size: 40px;
+}
+
+header {
+  background: var(--main_color);
+  color: white;
+  padding-top: 8px;
+  min-height: 64px;
+  border-bottom: yellow 5px solid;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+
+  z-index: 1000;
+}
+.about-text p{
+  color: var(--sub_color);
+}
+header a {
+  font-weight: bold;
+  color: var(--seconder_color);
+  text-decoration: none;
+  font-size: 19px;
+}
+
+header li {
+  float: left;
+  padding: 0 11px;
+}
+
+header .brand {
+  float: left;
+}
+
+header .brand h1 {
+  margin: 0;
+  color: var(--seconder_color);
+}
+
+header nav {
+  float: left;
+  margin-top: 10px;
+}
+
+/* header .home a {
+  color: var(--seconder_color);
+  font-weight: bold; ==> in (header a) directly
+} */
+
+header a:hover {
+  color: orange;
+  font-weight: bold;
+}
+.footer {
+
+  background: var(--main_color);
+
+  color: var(--seconder_color);
+  text-align: center;
+}
+
+/* footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+} */
+
+.footer .container {
+  position: relative;
+}
+
+.footer p:not(.copyright) {
+  padding: 20px;
+  border-bottom: 1px solid var(--seconder_color);
+  font-size: 22px;
+  width: fit-content;
+  margin: 85px auto;
+}
+
+.footer .social-icons .social {
+  padding: 10px 10px;
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer .copyright span {
+  font-weight: bold;
+  color: var(--seconder_color);
+}
+
+#icon {
+  margin: 0;
+  width: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="describtion" content="Website for shopping" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/1.Main_Theme.css" />
+    <link rel="stylesheet" href="css/2.Log_Page.css" />
+    <link rel="stylesheet" href="css/poducts.css">
+    <title>shopx</title>
+  </head>
+  <body>
+<!-- start header -->
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <div class="brand">
+            <!-- <h1>shopex</h1> -->
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <div class="logo">
+                <a href="">
+                  <h3>ShopX</h3>
+                </a>
+              </div>
+            </li>
+            <li>
+              <form class="search-box">
+                <input
+                  type="search"
+                  class="search"
+                  placeholder="Search In Our Products"
+                />
+
+                <button class="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>Search
+                </button>
+              </form>
+            </li>
+            <li class="home">
+              <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+            </li>
+            <li><a href="5.Feedback.htm" class="log_in">Feedback </a></li>
+            <li><a href="contactus.html" class="C_us"> Contact Us </a></li>
+            <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
+            <li><a class="click">join </a>
+              <div class="list">
+                <a class="log" href="2.Log_Page.html">log In</a>
+                <a class="log" href="4.Registration.html">register</a>
+              </div></li>
+            <li>
+              <a href="#">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+            </li>
+            <li>
+              <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="container2">
+          <ul>
+            <li>
+              <i class="fa-solid fa-ski-boot-ski"></i> 
+              <span>books</span>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </header>
+    <div class="maincont">
+      <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "images/zotzc1.jpg" alt = "rtx 3090">
+                <img src = "images/zotzc12.jpg" alt = "rtx 3090">
+                <img src = "images/zotzc123.jpg" alt = "rtx 3090">
+                <img src = "images/zotac4.jpg" alt = "rtx 3090">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "images/zotzc1.jpg" alt = "rtx 3090">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "images/zotzc12.jpg" alt = "rtx 3090">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "images/zotzc123.jpg" alt = "rtx 3090">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "4">
+                <img src = "images/zotac4.jpg" alt = "srtx 3090">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">ZOTAC RTX 3090</h2>
+            <div class = "product-rating">
+
+
+            </div>
+            <div class = "product-price">
+            <p class = "last-price">Old Price: <span>2400$</span></p>
+            <p class = "new-price">New Price: <span>1900$</span></p>
+            </div>
+  
+            <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p>The 3090 features 10,496 CUDA cores and 328 Tensor cores, it has a base clock of 1.4 GHz boosting to 1.7 GHz, 24 GB of memory and a power draw of 350 W. </p>
+            <ul>
+                <li>brand: <span>zotac</span></li>
+                <li>Available: <span>in stock</span></li>
+                <li>Category: <span>computer</span></li>
+                <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+            </div>
+            <div class = "purchase-info">
+            <button type = "button" class = "btn">
+                Add to Cart <i class = "fas fa-shopping-cart"></i>
+            </button>
+            </div>
+        </div>
+        </div>
+  </div>
+    </div>
+    <script src="js/all.min.js"></script>
+  </body>
+  <script>
+        var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "images/dark theme icon/146199.png";
+      } else {
+        icon.src =
+          "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
+      }
+    };
+    </script>
+  <script>
+    const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+let click=document.querySelector('.click');
+  let list =document.querySelector('.list');
+  click.addEventListener("click",()=>{
+    list.classList.toggle('newlist');
+  })
+  </script>
+</html>
