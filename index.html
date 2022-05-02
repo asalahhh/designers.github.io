@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/1.Main_Theme.css" />
   <link rel="stylesheet" href="css/shopxMainPage.css" />
@@ -14,7 +15,19 @@
 </head>
 
 <body>
-
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content">
+      </div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button type="button" class="buy-btn">Buy Now</button>
+      <button type="button" class="cart-page">Cart page</button>
+      <i class='bx bx-x' id="close-cart"></i>
+      <!-- <button id="close-cart"><i class="fa fa-close"></i></button> -->
+    </div>
   <!-- start header -->
   <header>
     <div class="container">
@@ -44,7 +57,7 @@
           <li class="home">
             <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
           </li>
-          <li><a href="5.Feedback.html" class="log_in">Feedback </a></li>
+          <li><a href="5.Feedback.htm" class="log_in">Feedback </a></li>
           <li><a href="8.contact-us.html" class="C_us"> Contact Us </a></li>
           <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
           <li><a class="click">join </a>
@@ -52,9 +65,9 @@
               <a class="log" href="2.Log_Page.html">log In</a>
               <a class="log" href="4.Registration.html">register</a>
             </div></li>
-          <li>
-            <a href="#">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
-          </li>
+            <li>
+              <a href="#" id="cart-icon">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+            </li>
           <li>
             <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
           </li>
@@ -169,16 +182,17 @@
       <div class="product-card">
         <div class="badge">Hot</div>
         <div class="product-tumb">
-          <img src="images/726d2813-892c-420a-beeb-9e699b66a724.jpg" alt="">
+          <img src="images/726d2813-892c-420a-beeb-9e699b66a724.jpg" alt="" class="product-img">
         </div>
         <div class="product-details">
+          <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+          <h2 class="product-title">book</h2>
           <span class="product-catagory">Time Asia Ed. TIME 100 COMPANIES</span>
           <div class="product-bottom-details">
             <div class="product-price"><small>$240</small>$80</div>
             <div class="product-links">
               <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
-            </div>
+              <button><i class="fa fa-shopping-cart add-cart"></i></button>
           </div>
         </div>
       </div>
@@ -189,7 +203,7 @@
 
   <!-- start product 2 -->
   <div>
-    <a href="12.product.html">
+    <a href="#">
       <div class="special-heading" id="pc">
         computers
       </div>
@@ -337,5 +351,5 @@
     list.classList.toggle('newlist');
   })
 </script>
-
+<script src="js/cart.js" async></script>
 </html>

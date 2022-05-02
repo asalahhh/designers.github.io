@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="describtion" content="Website for shopping" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/1.Main_Theme.css" />
+    <link rel="stylesheet" href="css/Cart.css" />
+    <title>shopx</title>
+  </head>
+
+  <body>
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content"></div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button type="button" class="buy-btn">Buy Now</button>
+      <button type="button" class="cart-page">Cart page</button>
+      <i class="bx bx-x" id="close-cart"></i>
+      <!-- <button id="close-cart"><i class="fa fa-close"></i></button> -->
+    </div>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <div class="brand">
+            <!-- <h1>shopex</h1> -->
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <div class="logo">
+                <a href="">
+                  <h3>ShopX</h3>
+                </a>
+              </div>
+            </li>
+            <li>
+              <form class="search-box">
+                <input
+                  type="search"
+                  class="search"
+                  placeholder="Search In Our Products"
+                />
+
+                <button class="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>Search
+                </button>
+              </form>
+            </li>
+            <li class="home">
+              <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+            </li>
+            <li><a href="5.Feedback.htm" class="log_in">Feedback </a></li>
+            <li><a href="8.contact-us.html" class="C_us"> Contact Us </a></li>
+            <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
+            <li>
+              <a class="click">join </a>
+              <div class="list">
+                <a class="log" href="2.Log_Page.html">log In</a>
+                <a class="log" href="4.Registration.html">register</a>
+              </div>
+            </li>
+            <li>
+              <a href="#" id="cart-icon"
+                >Cart <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+            <li>
+              <img
+                src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico"
+                id="icon"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--     <div class="container2">
+      <ul>
+        <li>
+          <i class="fa-solid fa-book"></i>
+          <a href="#books">
+            <span>books</span>
+          </a>
+        </li>
+        <li>
+          <i class="fa-solid fa-desktop"></i>
+          <a href="#pc">
+            <span>computer</span>
+          </a>
+        </li>
+        <li>
+          <a href="#shoes">
+            <span>shoes</span>
+          </a>
+        </li>
+        <li>
+          <i class="fa-solid fa-burger"></i>
+          <a href="#resturant">
+            <span>resturant</span>
+          </a>
+        </li>
+        <li>
+          <i class="fa-solid fa-mobile"></i>
+          <a href="#mobile">
+            <span>mobile</span>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+    <!-- end header -->
+
+    <!-- Cart start -->
+    <div class="small-container cart-one">
+      <table class="cart-table">
+        <tr class="th-cart">
+          <th class="prd">Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr class="td-cart">
+          <td>
+            <div class="cart-info">
+              <img src="images/1.png" />
+              <div>
+                <p>iphone 99</p>
+                <small>Price: $999</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+        <tr class="td-cart">
+          <td>
+            <div class="cart-info">
+              <img src="images/2.png" />
+              <div>
+                <p>iphone 99</p>
+                <small>Price: $999</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+        <tr class="td-cart">
+          <td>
+            <div class="cart-info">
+              <img src="images/3.png" />
+              <div>
+                <p>iphone 99</p>
+                <small>Price: $999</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+        <tr class="td-cart">
+          <td>
+            <div class="cart-info">
+              <img src="images/4.png" />
+              <div>
+                <p>iphone 99</p>
+                <small>Price: $999</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price-cart">
+        <table class="cart-table-total">
+          <tr class="td-cart-total">
+            <td class="NM">subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr class="td-cart-total">
+            <td class="NM">Tax</td>
+            <td>$30.00</td>
+          </tr>
+          <tr class="td-cart-total">
+            <td class="NM">Total</td>
+            <td>$230.00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- Cart End -->
+
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <p>join us</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook social"></i>
+          <i class="fa-brands fa-twitter social"></i>
+          <i class="fa-brands fa-instagram social"></i>
+          <i class="fa-solid fa-house social"></i>
+        </div>
+        <p class="copyright">
+          copyright 2022 &copy; <span>Designers</span> All rights reserved
+        </p>
+      </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- script file -->
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  <script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "images/dark theme icon/146199.png";
+      } else {
+        icon.src =
+          "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
+      }
+    };
+    let click = document.querySelector(".click");
+    let list = document.querySelector(".list");
+    click.addEventListener("click", () => {
+      list.classList.toggle("newlist");
+    });
+  </script>
+  <script src="js/cart.js" async></script>
+</html>
