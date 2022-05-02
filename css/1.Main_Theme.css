@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   padding: 0px;
   margin: 0px;
   background-image: var(--wallpaper);
@@ -36,10 +36,9 @@ body {
   width: 95%;
   margin: auto;
 }
-.eye  {
+.eye {
   color: var(--sub_color);
 }
-
 
 /* SHOPX word in the top bar*/
 .logo h3 {
@@ -66,36 +65,35 @@ body {
   width: 200px;
   position: relative;
 } */
-.click{
+.click {
   /* background:blue; */
   cursor: pointer;
 }
-.click:hover{
-  /* background: red; */
-}
-.log,.click{
-  
+
+/* .click:hover{
+  background: red;
+} */
+
+.log,
+.click {
   border: none;
   outline: none;
   transition: 0.3s;
   display: flex;
-  
 }
-.list{
+.list {
   position: absolute;
-  transform: scale(0);
+  transform: scaleY(0);
   transform-origin: top;
-
 }
-.newlist{
-transform: scaleY(1);
+.newlist {
+  transform: scaleY(1);
 }
-
-.log{
+.log {
   background-color: rebeccapurple;
   padding: 20px;
 }
-.log:hover{
+.log:hover {
   background: yellowgreen;
   transform: scale(1.1);
 }
@@ -166,7 +164,7 @@ header {
 
   z-index: 1000;
 }
-.about-text p{
+.about-text p {
   color: var(--sub_color);
 }
 header a {
@@ -178,8 +176,7 @@ header a {
 
 header li {
   float: left;
-  /* padding: 0 11px; */
-  margin: 7px;
+  padding: 0 11px;
 }
 
 header .brand {
@@ -205,8 +202,138 @@ header a:hover {
   color: orange;
   font-weight: bold;
 }
-.footer {
 
+/* Cart */
+
+.cart {
+  font-weight: 100;
+  position: fixed;
+  right: -100%;
+  /* right: 0; */
+  width: 20%;
+  min-height: 45%;
+  padding: 20px;
+  background: skyblue;
+  box-shadow: -2px 0 4px gray;
+  transition: 0.3s;
+}
+
+.cart.active {
+  right: 0;
+}
+.cart-title {
+  text-align: center;
+  font-weight: 900;
+  margin: 15px;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-product-title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+/* .cart-price {
+  font-weight: 600;
+} */
+
+.cart-quantity {
+  border: 1px solid red;
+  outline-color: blue;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-trash {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+  border-top: 1px solid red;
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.buy-btn {
+  display: flex;
+  padding: 12px 22px;
+  margin: 1.5rem auto 0 auto;
+  border: none;
+  background-color: red;
+  color: #eee;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buy-btn:hover {
+  background-color: black;
+}
+.cart-page {
+  display: flex;
+  padding: 12px 22px;
+  margin: 1.5rem auto 0 auto;
+  border: none;
+  background-color: red;
+  color: #eee;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cart-page:hover {
+  background-color: black;
+}
+
+#close-cart {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  font-size: 10px;
+  top: 0.5rem;
+  right: 0.8rem;
+  font-size: 1.7rem;
+  color: red;
+  cursor: pointer;
+}
+
+.footer {
   background: var(--main_color);
 
   color: var(--seconder_color);

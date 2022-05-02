@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+.cart-one {
+  width: 85%;
+  background: #eee;
+  border: #ff523b;
+  padding: 80px 0;
+  margin: 80px auto;
+}
+
+.cart-table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.th-cart th {
+  text-align: right;
+  padding: 5px;
+  color: #fff;
+  background: #ff523b;
+  font-weight: normal;
+}
+
+.prd {
+  text-align: left !important;
+}
+
+.td-cart td {
+  padding: 10px 5px;
+}
+
+.td-cart p {
+  font-weight: bold;
+}
+
+.td-cart input {
+  width: 30px;
+  height: 25px;
+  padding: 5px;
+}
+
+.td-cart a {
+  color: #ff523b;
+  font-size: 12px;
+}
+
+.td-cart img {
+  width: 80px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+.total-price-cart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-table-total {
+  border-top: 3px solid red;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.cart-table-total .NM {
+  width: 15%;
+}
+.td-cart {
+  text-align: right;
+}
