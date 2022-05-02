@@ -180,7 +180,8 @@ header a {
 
 header li {
   float: left;
-  padding: 0 11px;
+  /* padding: 0 11px; */
+  margin: 7px;
 }
 
 header .brand {
