@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopex Feedback</title>
+    <link rel="stylesheet" href="css/5.feedback.css">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/1.Main_Theme.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <div class="brand">
+                    <!-- <h1>shopex</h1> -->
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="logo">
+                            <a href="">
+                                <h3>ShopX</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <form class="search-box">
+                            <input type="search" class="search" placeholder="Search In Our Products" />
+
+                            <button class="search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>Search
+                            </button>
+                        </form>
+                    </li>
+                    <li class="home">
+                        <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+                    </li>
+                    <li><a href="5.Feedback.html" class="log_in">Feedback </a></li>
+                    <li><a href="8.contact-us.html" class="C_us"> Contact Us </a></li>
+                    <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
+                    <li><a class="click">join </a>
+                        <div class="list">
+                            <a class="log" href="2.Log_Page.html">log In</a>
+                            <a class="log" href="4.Registration.html">register</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+                    </li>
+                    <li>
+                        <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
+                    </li>
+                </ul>
+            </nav>
+            <!-- <div class="container2">
+            <ul>
+                <li>
+                <i class="fa-solid fa-ski-boot-ski"></i> 
+                <span>books</span>
+                </li>
+            </ul>
+            </div> -->
+        </div>
+    </header>
+    <div class="feed"></div>
+    <h1 class="feedback" title="share your ideas">Feedback</h1>
+    <p class="p1">Note: this form is for only support issues inside the page.</p>
+    <p class="p2">Fill the following form.</p>
+    <input class="x" type="text" placeholder="First name">
+    <input class="x" type="text" placeholder="Last name"><br>
+    <input class="x" type="email" placeholder="e-mail"><br>
+    <input class="x" type="tel" placeholder="telephone"><br>
+    <input class="x" type="text" placeholder="age">
+
+    <ol>
+        <div class="label1 ">
+            <li>Did you like our website?</li>
+            <label>Yes</label>
+            <input type="radio" name="x">
+            <label>No</label>
+            <input type="radio" name="x">
+        </div>
+        <br>
+        <div class="label2">
+            <li>Did you achieve what you come from?</li>
+            <label>Yes</label>
+            <input type="radio" name="y">
+            <label>No</label>
+            <input type="radio" name="y">
+        </div>
+        <br>
+        <div class="label3">
+            <li>Would you nominate our website for the top 100 sites?</li>
+            <label>Agree</label>
+            <input type="radio" name="z">
+            <label>Not realy</label>
+            <input type="radio" name="z">
+            <label>Disagree</label>
+            <input type="radio" name="z">
+        </div>
+        <br>
+        <br>
+        <div class="label4">
+
+            <li>What do you suggest to add to the products?</li>
+            <form action="">
+                <textarea class="textarea" placeholder="Suggest here." cols="70" rows="8"></textarea>
+        </div>
+        <br>
+
+        </form>
+        <div class="label5">
+            <li>Describe the issue you have encountered here if found.</li>
+            <form action="">
+                <textarea class="textarea" placeholder="Describe here." cols="70" rows="8"></textarea>
+        </div>
+        <br>
+
+        <h2 id="u">Rate us out of 5 stars</h2>
+        <br>
+
+
+        <!--the stars-->
+        <div class="star-rating">
+            <input id="star-5" type="radio" name="rating" value="star-5">
+            <label for="star-5" title="55 stars">
+                <!--نفس قيمة id-->
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </label>
+
+            <input id="star-4" type="radio" name="rating" value="star-4">
+            <label for="star-4" title="4 stars">
+                <!--نفس قيمة id-->
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </label>
+
+            <input id="star-3" type="radio" name="rating" value="star-3">
+            <label for="star-3" title="3 stars">
+                <!--نفس قيمة id-->
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </label>
+
+            <input id="star-2" type="radio" name="rating" value="star-2">
+            <label for="star-2" title="2 stars">
+                <!--نفس قيمة id-->
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </label>
+
+            <input id="star-1" type="radio" name="rating" value="star-1">
+            <label for="star-1" title="1 stars">
+                <!--نفس قيمة id-->
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </label>
+        </div>
+
+        <br>
+
+        <input class="send" type="submit" value="send" onclick="myfunction()">
+        <p id="demo"></p>
+
+        <script>
+            function myfunction() {
+                var txt;
+                if (confirm("Are you sure about this desicion?")) {
+                    txt = "Thanks for your time."
+                }
+                else {
+                    txt = "see your reviews again."
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+
+
+        </form>
+
+    </ol>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>join us</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook social"></i>
+                <i class="fa-brands fa-twitter social"></i>
+                <i class="fa-brands fa-instagram social"></i>
+                <i class="fa-solid fa-house social"></i>
+            </div>
+            <p class="copyright">
+                copyright 2022 &copy; <span>Designers</span> All rights reserved
+            </p>
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+</body>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+            icon.src = "images/dark theme icon/146199.png";
+        } else {
+            icon.src =
+                "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
+        }
+    };
+    let click = document.querySelector('.click');
+    let list = document.querySelector('.list');
+    click.addEventListener("click", () => {
+        list.classList.toggle('newlist');
+    })
+</script>
+
+</html>
