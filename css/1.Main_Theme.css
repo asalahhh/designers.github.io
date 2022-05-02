@@ -83,16 +83,14 @@ body {
 }
 .list{
   position: absolute;
-  display: none;
+  transform: scale(0);
   transform-origin: top;
 
 }
 .newlist{
-display: none !important;
+transform: scaleY(1);
 }
-.newlist1{
-  display: block !important;
-  }
+
 .log{
   background-color: rebeccapurple;
   padding: 20px;
