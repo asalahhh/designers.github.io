@@ -8,7 +8,7 @@
     --wallpaper: url(../images/daka-dibuja-6-medio-dia.jpg);
 }
 body {
-    font-family: "Montserrat", sans-serif;
+    
     padding: 0px;
     margin: 0px;
     background-image: var(--wallpaper);

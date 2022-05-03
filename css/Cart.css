@@ -24,7 +24,7 @@
   padding: 5px;
   color: #fff;
   background: #ff523b;
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 .prd {
@@ -73,4 +73,21 @@
 }
 .td-cart {
   text-align: right;
+}
+.checkout{
+  padding: 30px;
+    text-align: center;
+    background: var(--seconder_color);
+    border: 20px;
+    width: 52px;
+    margin-left: 50%;
+    border-radius: 62px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.checkout:hover{
+  
+  border: 1px solid brown;
+  background: transparent;
 }
