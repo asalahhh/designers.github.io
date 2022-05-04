@@ -15,19 +15,19 @@
 </head>
 
 <body>
-    <div class="cart">
-      <h2 class="cart-title">Your Cart</h2>
-      <div class="cart-content">
-      </div>
-      <div class="total">
-        <div class="total-title">Total</div>
-        <div class="total-price">$0</div>
-      </div>
-      <button type="button" class="buy-btn">Buy Now</button>
-      <button type="button" class="cart-page">Cart page</button>
-      <i class='bx bx-x' id="close-cart"></i>
-      <!-- <button id="close-cart"><i class="fa fa-close"></i></button> -->
+  <div class="cart">
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
     </div>
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price">$0</div>
+    </div>
+    <button type="button" class="buy-btn">Buy Now</button>
+    <button type="button" class="cart-page">Cart page</button>
+    <i class='bx bx-x' id="close-cart"></i>
+    <!-- <button id="close-cart"><i class="fa fa-close"></i></button> -->
+  </div>
   <!-- start header -->
   <header>
     <div class="container">
@@ -47,7 +47,8 @@
           </li>
           <li>
             <form class="search-box">
-              <input type="search" class="search" placeholder="Search In Our Products" />
+              <input type="search" class="search" id="myInput" onkeyup="search()"
+                placeholder="Search In Our Products" />
 
               <button class="search-button">
                 <i class="fa-solid fa-magnifying-glass"></i>Search
@@ -64,10 +65,11 @@
             <div class="list">
               <a class="log" href="2.Log_Page.html">log In</a>
               <a class="log" href="4.Registration.html">register</a>
-            </div></li>
-            <li>
-              <a href="13.Cart.html" id="cart-icon">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
-            </li>
+            </div>
+          </li>
+          <li>
+            <a href="13.Cart.html" id="cart-icon">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+          </li>
           <li>
             <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
           </li>
@@ -117,7 +119,7 @@
     </ul>
   </div>
   <!-- end header -->
-  
+
 
   <!--  start slider -->
   <div class="slider">
@@ -174,143 +176,157 @@
 
 
   <!-- start product 1  -->
-  <div>
-    <a href="7.Product.html">
-      <div class="special-heading" id="books">
-        books
-      </div>
-      <div class="product-card">
-        <div class="badge">Hot</div>
-        <div class="product-tumb">
-          <img src="images/726d2813-892c-420a-beeb-9e699b66a724.jpg" alt="" class="product-img">
-        </div>
-        <div class="product-details">
-          <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-          <h2 class="product-title">book</h2>
-          <span class="product-catagory">Time Asia Ed. TIME 100 COMPANIES</span>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$240</small>$80</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <button><i class="fa fa-shopping-cart add-cart"></i></button>
+  <ul id="myUL">
+    <!-- start product 1  -->
+    <li>
+      <div>
+        <a href="7.Product.html">
+          <div class="special-heading" id="books">
+            books
           </div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <!-- end product 1  -->
-
-
-  <!-- start product 2 -->
-  <div>
-    <a href="#">
-      <div class="special-heading" id="pc">
-        computers
-      </div>
-      <div class="product-card">
-        <div class="badge">Hot</div>
-        <div class="product-tumb">
-          <img src="images/R.jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">ZOTAC GAMING GeForce RTX 3090 Ti AMP Extreme Holo</span>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$2400</small>$1900</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="images/726d2813-892c-420a-beeb-9e699b66a724.jpg"
+                alt="">
+            </div>
+            <div class="product-details">
+              <label class="product-catagory">Time Asia Ed. TIME 100 COMPANIES</label>
+              <div class="product-bottom-details">
+                <div class="product-price"><small>$240</small>$80</div>
+                <div class="product-links">
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
-    </a>
-  </div>
-  <!--  end product 2  -->
+    </li>
+    <!-- end product 1  -->
 
-  <!-- start products 3 -->
-  <div>
-    <a href="6.Product.html">
-      <div class="special-heading" id="shoes">
-        shoes
-      </div>
 
-      <!-- start products -->
-      <div class="product-card">
-        <div class="badge">Hot</div>
-        <div class="product-tumb">
-          <img src="images/shoes.png" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">ADIDAS EGYPT,
-            RUNNING
-            SHOSES</span>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$2000</small>$1750</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
+    <!-- start product 2 -->
+    <li>
+      <div>
+        <a href="#">
+          <div class="special-heading" id="pc">
+            computers
+          </div>
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="images/R.jpg" alt="">
+            </div>
+            <div class="product-details">
+              <label class="product-catagory c1">ZOTAC GAMING GeForce RTX 3090
+                Ti
+                AMP Extreme Holo</label>
+              <div class="product-bottom-details">
+                <div class="product-price"><small>$2400</small>$1900</div>
+                <div class="product-links">
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-    </a>
-  </div>
-  <!-- end products 3  -->
-
-
-  <!-- start products 4 -->
-  <div>
-    <a href="9.product.htm">
-      <div class="special-heading" id="resturant">
-        resturant
+        </a>
       </div>
+    </li>
+    <!--  end product 2  -->
 
-      <!-- start products -->
-      <div class="product-card">
-        <div class="badge">Hot</div>
-        <div class="product-tumb">
-          <img src="images/carousel-1(1).jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">all kinds of food</span>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$240</small>$80</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
-            </div>
+    <!-- start products 3 -->
+    <li>
+      <div>
+        <a href="6.Product.html">
+          <div class="special-heading" id="shoes">
+            shoes
           </div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <!-- end products 4  -->
 
-  <!-- start products 5 -->
-  <div>
-    <a href="10.product.html">
-      <div class="special-heading" id="mobile">
-        mobile
-      </div>
-      <!-- start products -->
-      <div class="product-card">
-        <div class="badge">Hot</div>
-        <div class="product-tumb">
-          <img src="images/0.png" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">IPHONE 13 PRO MAX</span>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>EGP 40,000.00</small>EGP 35,999.00</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
+          <!-- start products -->
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="images/shoes.png" alt="">
             </div>
-          </div>
+            <div class="product-details">
+              <label class="product-catagory c1">ADIDAS EGYPT, RUNNING SHOSES</label>
+              <div class="product-bottom-details">
+                <div class="product-price"><small>$2000</small>$1750</div>
+                <div class="product-links">
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-    </a>
-  </div>
-  <!-- end products 5  -->
+      </li>
+      <!-- end products 3  -->
+
+
+      <!-- start products 4 -->
+      <li>
+        <div>
+          <a href="9.product.htm">
+            <div class="special-heading" id="resturant">
+              resturant
+            </div>
+
+            <!-- start products -->
+            <div class="product-card">
+              <div class="badge">Hot</div>
+              <div class="product-tumb">
+                <img src="images/carousel-1(1).jpg" alt="">
+              </div>
+              <div class="product-details">
+                <label class="product-catagory c1">ADIDAS EGYPT, RUNNING
+                  SHOSES</label>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$240</small>$80</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <!-- end products 4  -->
+
+      <!-- start products 5 -->
+      <li>
+        <div>
+          <a href="10.product.html">
+            <div class="special-heading" id="mobile">
+              mobile
+            </div>
+            <!-- start products -->
+            <div class="product-card">
+              <div class="badge">Hot</div>
+              <div class="product-tumb">
+                <img src="images/0.png" alt="">
+              </div>
+              <div class="product-details">
+                <label class="product-catagory">IPHONE 13 PRO MAX</label>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>EGP 40,000.00</small>EGP
+                    35,999.00</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end products 5  -->
+      </ul>
 
 
   <!-- start footer -->
@@ -345,11 +361,33 @@
         "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
     }
   };
-  let click=document.querySelector('.click');
-  let list =document.querySelector('.list');
-  click.addEventListener("click",()=>{
+  let click = document.querySelector('.click');
+  let list = document.querySelector('.list');
+  click.addEventListener("click", () => {
     list.classList.toggle('newlist');
   })
 </script>
 <script src="js/cart.js" async></script>
+<script>
+  function search() {
+    // Declare variables
+    var input, filter, ul, li, label, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      label = li[i].getElementsByTagName("label")[0];
+      txtValue = label.textContent || label.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script>
+
 </html>
