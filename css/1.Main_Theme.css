@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
 body {
-  
+  font-family: var(--main-font);
   padding: 0px;
   margin: 0px;
   background-image: var(--wallpaper);
   background-size: cover;
   scroll-behavior: smooth;
   transition: 0.5s;
+  text-transform: capitalize;
+  box-sizing: border-box;
 }
-
+.container2{
+  background-color: var(--seconder_color);
+}
 /* colors in light mode */
 :root {
   --main_color: #eee;
@@ -17,6 +21,8 @@ body {
   --third_color: #4b7be5;
   --sub_color: white;
   --wallpaper: url(../images/daka-dibuja-6-medio-dia.jpg);
+  --main-font:'Montserrat', sans-serif;
+  --hover-color:orange;
 }
 
 /* colors in dark mode*/
@@ -26,6 +32,8 @@ body {
   --third_color: black;
   --sub_color: hsl(221deg 95% 60%);
   --wallpaper: url(../images/daka-dibuja-2-media-noche.jpg);
+  --main-font: "Lobster", cursive;
+  --hover-color:black;
 }
 
 .clr {
@@ -46,12 +54,12 @@ body {
   margin: -13px 0 10px;
   font-weight: 300;
   font-size: 40px;
-  font-family: "Lobster", cursive;
+  
 }
 
 .search {
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  
   font-size: 15px;
   font-weight: bold;
   background-color: var(--sub_color);
@@ -111,7 +119,6 @@ body {
 }
 
 .search-button {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 15px;
   background-color: var(--sub_color);
@@ -176,7 +183,7 @@ header a {
 
 header li {
   float: left;
-  padding: 0 11px;
+  margin: 10px;
 }
 
 header .brand {
@@ -199,7 +206,7 @@ header nav {
 } */
 
 header a:hover {
-  color: orange;
+  color: var(--hover-color);
   font-weight: bold;
 }
 
@@ -338,6 +345,8 @@ header a:hover {
 
   color: var(--seconder_color);
   text-align: center;
+  margin-bottom: -10px;
+  
 }
 
 /* footer::before {
@@ -350,20 +359,23 @@ header a:hover {
   background-color: rgb(0 0 0 / 70%);
 } */
 
-.footer .container {
-  position: relative;
-}
+
 
 .footer p:not(.copyright) {
   padding: 20px;
   border-bottom: 1px solid var(--seconder_color);
   font-size: 22px;
   width: fit-content;
-  margin: 85px auto;
+  margin: 20px  auto;
 }
 
 .footer .social-icons .social {
   padding: 10px 10px;
+  color: var(--seconder_color);
+}
+.footer a:hover{
+  color: red;
+  font-weight: bold;
 }
 
 .footer .copyright {
@@ -381,3 +393,4 @@ header a:hover {
   width: 30px;
   cursor: pointer;
 }
+

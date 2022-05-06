@@ -1,23 +1,8 @@
 /* start globle rules */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
-:root {
-    --main_color: #eee;
-    --seconder_color: #4b7be5;
-    --sub_color: white;
-    --wallpaper: url(../images/daka-dibuja-6-medio-dia.jpg);
-}
-body {
-    
-    padding: 0px;
-    margin: 0px;
-    background-image: var(--wallpaper);
-    background-size: cover;
-    scroll-behavior: smooth;
-    transition: 0.3s; 
-    box-sizing: border-box;
-    text-transform: capitalize;
-}
+
+
 
 .container2 {
     padding-left: 15px;
@@ -31,24 +16,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-/* Small */
-@media (min-width: 768px) {
-    .container2 {
-    width: 750px;
-    }
-}
-  /* Medium */
-@media (min-width: 992px) {
-    .container2 {
-    width: 970px;
-    }
-}
-  /* Large */
-@media (min-width: 1200px) {
-    .container2 {
-    width: 1170px;
-    }
-}
+
 .special-heading{
     color: white;
     font-size: 60px;
@@ -81,12 +49,15 @@ body {
     color: white;
 } */
 .container2{
-    background-color: var(--seconder_color);
+    
     margin-top: 77px;
     padding: 10px;
     color: white;
     height: 25px;
     border-bottom: 3px solid white;
+    position: sticky;
+    top: 90px;
+    z-index: 999;
 }
 .container2 ul{
     display: flex;

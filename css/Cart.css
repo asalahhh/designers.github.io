@@ -84,10 +84,14 @@
     border-radius: 62px;
     cursor: pointer;
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.7s;
 }
 
 .checkout:hover{
-  
+  color: red;
   border: 1px solid brown;
-  background: transparent;
+  background: grey;
+  
 }

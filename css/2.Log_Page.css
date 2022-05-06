@@ -35,18 +35,10 @@
   outline: none;
   background: transparent;
 }
-
-.box .input-box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: 1px;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: 1.4s;
+.box input:hover{
+  border-bottom: 1px solid red;
 }
+
 
 /* .box .input-box input:focus ~ label,
 .box .input-box input:valid~label 
@@ -85,4 +77,7 @@
   align-items: center;
   margin-bottom: 100px;
   margin-top: 75px;
+}
+#wrong{
+  color:red;
 }
