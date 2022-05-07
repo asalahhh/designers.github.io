@@ -110,7 +110,8 @@
     border: 2px solid #111154;
     border-radius: 15px;
     font-size: 20px;
-    
+    padding: 13px;
+    text-decoration: none;
     background: #eee;
 
 }

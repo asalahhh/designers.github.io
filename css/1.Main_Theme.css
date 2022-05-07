@@ -371,8 +371,9 @@ header a:hover {
 
 .footer .social-icons .social {
   padding: 10px 10px;
-  color: var(--seconder_color);
+  
 }
+
 .footer a:hover{
   color: red;
   font-weight: bold;
@@ -381,6 +382,9 @@ header a:hover {
 .footer .copyright {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.footer .container .social-icons a:hover{
+  color: var(--hover-color);
 }
 
 .footer .copyright span {
@@ -393,4 +397,18 @@ header a:hover {
   width: 30px;
   cursor: pointer;
 }
-
+.accep{
+  color: var(--sub_color);
+}
+.accep a{
+  color: yellow;
+  font-weight: bold;
+}
+.accep .lin{
+    
+    background: var(--seconder_color);
+}
+.accep .lin:hover{
+  border: 1px solid red;
+  background: transparent;
+}

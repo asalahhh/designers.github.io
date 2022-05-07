@@ -4,29 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Book-shopex </title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/7.Product.css">
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/1.Main_Theme.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ok-shopex</title>
+    <link rel="stylesheet" href="css/1.Main_Theme.css">
+    <link rel="stylesheet" href="css/accepted.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            
+
             <nav>
                 <ul>
                     <li>
                         <div class="logo">
                             <a href="index.html">
-                                <h3>ShopeX</h3>
+                                <h3>ShopX</h3>
                             </a>
                         </div>
                     </li>
                     <li>
                         <form class="search-box">
-                            <input type="search" class="search" placeholder="search for our products" />
+                            <input type="search" class="search" id="myInput" onkeyup="search()"
+                                placeholder="Search In Our Products" />
 
                             <button class="search-button">
                                 <i class="fa-solid fa-magnifying-glass"></i>Search
@@ -36,7 +37,7 @@
                     <li class="home">
                         <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
                     </li>
-                    <li><a href="5.Feedback.html" class="log_in">Feedback </a></li>
+                    <li><a href="5.feedback.html" class="log_in">Feedback </a></li>
                     <li><a href="8.contact-us.html" class="C_us"> Contact Us </a></li>
                     <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
                     <li><a class="click">join </a>
@@ -46,37 +47,23 @@
                         </div>
                     </li>
                     <li>
-                        <a href="13.Cart.html">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+                        <a href="13.Cart.html" id="cart-icon">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
                     </li>
                     <li>
                         <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
                     </li>
                 </ul>
             </nav>
+
         </div>
     </header>
-    <section id="Book" class="about">
-        <div class="main">
-            <img src="images/726d2813-892c-420a-beeb-9e699b66a724.jpg">
-            <div class="about-text">
-                <h2><span>Time Asia Ed. TIME 100 COMPANIES</span></h2>
-                <h3><span>Author : TIME</span></h3>
-                <p>
-                    Product details<br> Price : 80$
-                    <hr><br>
-                    <span>Format</span>: Book | 62 Pages<br><br>
-                    <span>Publication date</span>: 11 Apr 2022<br><br>
-                    <span>Publisher</span>: Time Inc.<br><br>
-                    <span>Publication City/Country</span>: United States<br><br>
-                    <span>Language</span>: English<br><br>
-                    <span>ISBN13</span>: 9771064030005<br><br>
-                    <span>Bestsellers rank</span>: 121<br><br>
-
-                    <button type="button">Add To Cart</button>
-                </p>
-            </div>
+    <div class="accep">
+        <h3>thank you your application will be sent </h3>
+        <h4>return home</h4>
+        <div class="lin">
+            <a href="index.html">home page </a>
         </div>
-    </section>
+    </div>
     <div class="footer">
         <div class="container">
             <p>join us</p>
@@ -86,13 +73,12 @@
                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
                 <a href="index.html"><i class="fa-solid fa-house social"></i></a>
             </div>
-            <p class="copyright">
+            <div class="copyright">
                 copyright 2022 &copy; <span>Designers</span> All rights reserved
-            </p>
+            </div>
         </div>
     </div>
     <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 <script>
     var icon = document.getElementById("icon");

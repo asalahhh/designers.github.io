@@ -52,6 +52,7 @@
 .eye{
   position: absolute;
   right: 1px;
+  cursor: pointer;
 }
 #hide1{
   display: none;
@@ -80,4 +81,5 @@
 }
 #wrong{
   color:red;
+  font-weight: bold;
 }

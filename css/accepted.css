@@ -1,0 +1,17 @@
+.accep{
+    margin: 12% 0 0 39%;
+    background: rgba(0 0 0 /0.4);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 68px;
+}
+.lin a{
+    text-decoration: none;
+}
+.accep .lin{
+    width: fit-content;
+    border-radius: 15px;
+    padding: 13px;
+    cursor: pointer;
+}

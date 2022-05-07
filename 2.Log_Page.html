@@ -1,158 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="describtion" content="Website for shopping" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/1.Main_Theme.css" />
-    <link rel="stylesheet" href="css/2.Log_Page.css" />
-    <title>shopex</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <!-- <a href="css/1.Main_Theme.css">
-          <div class="brand">
-            <h1>shopex</h1>
-          </div>
-        </a> -->
-        <nav>
-          <ul>
-            <li>
-              <div class="logo">
-                <a href="index.html">
-                  <h3>ShopeX</h3>
-                </a>
-              </div>
-            </li>
-            <li>
-              <form class="search-box">
-                <input
-                  type="search"
-                  class="search"
-                  placeholder="search for our products"
-                />
-                <button class="search-button">
-                  <i class="fa-solid fa-magnifying-glass"></i>Search
-                </button>
-              </form>
-            </li>
-            <li class="home">
-              <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
-            </li>
-            <li><a href="5.Feedback.html" class="log_in">Feedback </a></li>
-            <li><a href="8.contact-us.html" class="C_us"> Contact Us </a></li>
-            <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
-            <li><a class="click">join </a>
-              <div class="list">
-                <a class="log" href="2.Log_Page.html">log In</a>
-                <a class="log" href="4.Registration.html">register</a>
-              </div></li>
-            <li>
-              <a href="13.Cart.html">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
-            </li>
-            <li>
-              <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="describtion" content="Website for shopping" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/1.Main_Theme.css" />
+  <link rel="stylesheet" href="css/2.Log_Page.css" />
+  <title>shopex</title>
+</head>
 
-    <div class="bo">
-      <div class="box">
-        <h2>Log In</h2>
-        <form method="get" action="index.html" id="loginform">
-          <div class="input-box">
-            <input type="text"  name="username" id="user" placeholder="Username"/>
-            <!-- <label>User Name</label> -->
-          </div>
-          <div class="input-box">
-            <input type="password"  name="age" id="pass" placeholder="Password"/>
-            <span class="eye" onclick="myfunction()">
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <div class="logo">
+              <a href="index.html">
+                <h3>ShopeX</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <form class="search-box">
+              <input type="search" class="search" placeholder="search for our products" />
+              <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>Search
+              </button>
+            </form>
+          </li>
+          <li class="home">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+          </li>
+          <li><a href="5.Feedback.html" class="log_in">Feedback </a></li>
+          <li><a href="8.contact-us.html" class="C_us"> Contact Us </a></li>
+          <li><a href="3.About Us.html" class="A_us"> About Us </a></li>
+          <li><a class="click">join </a>
+            <div class="list">
+              <a class="log" href="2.Log_Page.html">log In</a>
+              <a class="log" href="4.Registration.html">register</a>
+            </div>
+          </li>
+          <li>
+            <a href="13.Cart.html">Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+          </li>
+          <li>
+            <img src="images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico" id="icon" />
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="bo">
+    <div class="box">
+      <h2>Log In</h2>
+      <form method="get" action="index.html" id="loginform">
+        <div class="input-box">
+          <input type="text" name="username" id="user" placeholder="Username" />
+          <!-- <label>User Name</label> -->
+        </div>
+        <div class="input-box">
+          <input type="password" name="age" id="pass" placeholder="Password" />
+          <span class="eye" id="eye" >
             <i id="hide1" class="fa fa-eye"></i>
             <i id="hide2" class="fa fa-eye-slash"></i>
           </span>
-            <!-- <label>password</label> -->
-          </div>
-          <p id="wrong"></p>
-          <input   class="sub" id="btn"  onclick=" validate(event) "  type="submit" name="" value="log in"  >
-          <a href="4.Registration.html" class="sub">register</a>
-        </form>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p>join us</p>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook social"></i>
-          <i class="fa-brands fa-twitter social"></i>
-          <i class="fa-brands fa-instagram social"></i>
-          <i class="fa-solid fa-house social"></i>
+          <!-- <label>password</label> -->
         </div>
-        <p class="copyright">
-          copyright 2022 &copy; <span>Designers</span> All rights reserved
-        </p>
-      </div>
+        <p id="wrong"></p>
+        <input class="sub" id="btn"  type="submit" name="" value="log in">
+        <a href="4.Registration.html" class="sub">register</a>
+      </form>
     </div>
-    <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
 
-  <script>
-    var icon = document.getElementById("icon");
-    icon.onclick = function () {
-      document.body.classList.toggle("dark-theme");
-      if (document.body.classList.contains("dark-theme")) {
-        icon.src = "images/dark theme icon/146199.png";
-      } else {
-        icon.src =
-          "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
-      }
-    };
-    function myfunction(){
-      var x =document.getElementById("pass");
-      var y =document.getElementById("hide1");
-      var z =document.getElementById("hide2");
-      if (x.value==="") {
-        
-        z.style.display="none";
-      }
-      if (x.type==='password') {
-        x.type="text";
-        y.style.display="block";
-        z.style.display="none";
-      }
-      else{
-        x.type="password";
-        y.style.display="none";
-        z.style.display="block";
-      }
-    };
-    function validate(event) {
-      var a=document.getElementById("user");
-      var b=document.getElementById("pass");
-      if (a.value==="") {
-        document.getElementById("wrong").textContent="please enter username";
-        event.preventDefault();
-      }
-      else if (b.value===""&&b.value.length<=10) {
-        document.getElementById("wrong").textContent="please enter your password"
-        event.preventDefault();
-      }
-      
-      
-    };
-    let click=document.querySelector('.click');
-  let list =document.querySelector('.list');
-  click.addEventListener("click",()=>{
-    list.classList.toggle('newlist');
-  })
-    
-  </script>
+  <div class="footer">
+    <div class="container">
+      <p>join us</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social"></i></a>
+        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter social"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house social"></i></a>
+      </div>
+      <p class="copyright">
+        copyright 2022 &copy; <span>Designers</span> All rights reserved
+      </p>
+    </div>
+  </div>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+<script>
+  var icon = document.getElementById("icon");
+  icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src = "images/dark theme icon/146199.png";
+    } else {
+      icon.src =
+        "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
+    }
+  };
+  
+  
+  
+
+</script>
+
 </html>
