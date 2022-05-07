@@ -18,7 +18,9 @@ body {
   opacity: 0.5;
   padding: 50px 0px;
 }
-
+.inp{
+  padding: 13px 37px;
+}
 .ph {
   width: 50px;
   padding: 10px;
@@ -56,4 +58,10 @@ body {
 #but {
   color: white;
   font-size: 18px;
+}
+#no{
+  color: red;
+  font-weight: bold;
+  z-index: 800;
+  margin-bottom: 10px;
 }
