@@ -1,183 +1,147 @@
-.feed {
-    padding: 10px;
-    margin: 20px;
-    background-color: rgb(255, 255, 255);
-}
 
-.feedback {
-    color: #0e0e26;
-    font-weight: bolder;
-    font-size: 50px;
-    cursor: default;
-    animation-name: feedback;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    
-    padding: 10px;
-    margin: 20px;
-    background-color: rgb(255, 255, 255);
-}
-
-.feedback:hover {
-    color: #0e0e26;
-    font-size: 60px;
-    
-    transition: .7s ease;
-}
-
-
-
-
-
-
-.feed li {
-    font-size: 35px;
-    list-style-type: disc;
-    cursor: default;
-}
-
-.textarea {
-    background-color: azure;
-    font-weight: bold;
-
-    box-shadow: 10px 8px 7px 0px rgb(0 0 0 / 10%);
-}
-
-.textarea:focus {
-    border: 3px solid #eee;
-    transition: 2s;
-    transform: scale(.96);
-
-}
-
-.p1 {
-    font-size: 32px;
-    padding-bottom: 60px;
-    cursor: default;
-    
-    color: violet;
-    margin-left: 20px;
-}
-
-
-.p2 {
-    font-size: 28px;
-    cursor: default;
-    
-    color: #2222a0;
-    margin-left: 20px;
-}
-
-
-.x {
-    width: 300px;
-    border: 1.5px solid #111154;
-    border-radius: 15px;
-    font-size: 20px;
-    
-    background: #eee;
-    text-align: center;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-
-
-.x:hover {
-    background: rgb(238, 229, 229);
-    color: #fff;
-    transform: scale(.9);
-    transition: 2s;
-    cursor: pointer;
-}
-
-
-.label1,
-.label2,
-.label3,
-.label4,
-.label5 {
-    background: #eee;
-    box-shadow: 10px 8px 7px 0px rgb(0 0 0 / 10%);
-
-
-}
-
-.send {
-
-    width: 100px;
-    border: 2px solid #111154;
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 13px;
-    text-decoration: none;
-    background: #eee;
-
-}
-
-
-
-.send:hover {
-    background: #333;
-    color: #fff;
-    transform: scale(.9);
-    transition: 2s;
-    cursor: pointer;
-}
-
-
-
-.feed h2 {
-    border: 2px solid rgb(143, 143, 143);
-    width: 435px;
-    height: 60px;
-    cursor: default;
-    border-radius: 15px;
-    box-shadow: 10px 8px 7px 0px rgb(0 0 0 / 10%);
-}
-
-
-
-/*the stars*/
-.star-rating {
-    padding: 0px;
-    margin-top: -50px;
-    margin-bottom: 100px;
-    direction: rtl;
-    display: inline-block;
-    /*عشان تنحط على اليمين وتبدأ من النجمة 1*/
-}
-
-
-.star-rating input {
-    display: none;
-}
-
-.star-rating label {
-    color: #bbb;
-    font-size: 22px;
-    cursor: pointer;
-    transition: color .5s ease-in-out;
-    margin: 0px;
-    
-    font-size: 29px;
-    padding: 20px;
-    /*عشان ازقها شوية شمال*/
-}
 .feed{
-    margin:50px;
-    margin-left: 20px;
+
+    margin-top: 103px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
-.star-rating label:hover {
-    color: #f2b600;
+.container1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    width: 600px;
+    margin-top: 10px;
+    background: linear-gradient(90deg,#755bea, #ff72c0);
+    box-shadow: 0 0 100px 50px #5bea;
+    border: 2px solid #bea;
+    border-radius: 10px;
+    transition: 10s;
+    overflow: hidden;
 }
 
-.star-rating label:hover~label {
-    color: #f2b600;
+
+
+
+
+.form{
+    margin: 30px;
+    box-sizing: border-box;
 }
 
-.star-rating input[type='radio']:checked~label {
-    color: #f2b600;
+
+.user .inp{
+    width: 400px;
+    height: 30px;
+    margin-top: 5%;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    font-size: 20px;
+    outline: none;
 }
+
+
+.username .inp{
+    width: 400px;
+    height: 30px;
+    margin-top: 5%;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    font-size: 20px;
+    outline: none;
+}
+
+.user .inp::placeholder{
+    color: #222;
+}
+
+.username .inp::placeholder{
+    color: #222;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(180deg,#5bea, #ffc0);
+    box-shadow: 0 0 20px 4px #303030;
+    resize: none;
+    margin-top: 3%;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+textarea::placeholder{
+    color: #222;
+}
+
+.sub{
+    margin-top: 15%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.sub .inp{
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#5bea, #ffc0);
+    border: 3px solid #fff;
+    color: #f2f2f2;
+    
+}
+
+.sub .inp:active{
+    border-color: #755bea;
+}
+
+
+.container-rating{
+    width: 350px;
+    background:rgb(172, 76, 148);
+    padding: 20px 30px;
+    margin-left: 90px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container-rating .star-widget .inp{
+display: none;
+}
+
+.star-widget .lab{
+    font-size: 20px;
+    color: #444;
+    padding: 10px;
+    float: right;
+}
+
+.star-widget .inp:not(:checked) ~ .lab:hover,
+.star-widget .inp:not(:checked) ~ .lab:hover ~ .lab{
+    color: #fd4;
+}
+
+
+.inp:checked ~ .lab{
+    color: #fd4;
+}
+
+.inp#rate-5checked ~ .lab{
+    color: #fe7;
+    text-shadow: 0 0 20px;
+}
+
+
+

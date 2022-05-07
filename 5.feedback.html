@@ -62,135 +62,74 @@
             </div> -->
         </div>
     </header>
-    <div class="feed"></div>
-    <h1 class="feedback" title="share your ideas">Feedback</h1>
-    <p class="p1">Note: this form is for only support issues inside the page.</p>
-    <p class="p2">Fill the following form.</p>
-    <input class="x" type="text" placeholder="First name">
-    <input class="x" type="text" placeholder="Last name"><br>
-    <input class="x" type="email" placeholder="e-mail"><br>
-    <input class="x" type="tel" placeholder="telephone"><br>
-    <input class="x" type="text" placeholder="age">
-
-    <ol>
-        <div class="label1 ">
-            <li>Did you like our website?</li>
-            <label>Yes</label>
-            <input type="radio" name="x">
-            <label>No</label>
-            <input type="radio" name="x">
-        </div>
-        <br>
-        <div class="label2">
-            <li>Did you achieve what you come from?</li>
-            <label>Yes</label>
-            <input type="radio" name="y">
-            <label>No</label>
-            <input type="radio" name="y">
-        </div>
-        <br>
-        <div class="label3">
-            <li>Would you nominate our website for the top 100 sites?</li>
-            <label>Agree</label>
-            <input type="radio" name="z">
-            <label>Not realy</label>
-            <input type="radio" name="z">
-            <label>Disagree</label>
-            <input type="radio" name="z">
-        </div>
-        <br>
-        <br>
-        <div class="label4">
-
-            <li>What do you suggest to add to the products?</li>
-            <form action="">
-                <textarea class="textarea" placeholder="Suggest here." cols="70" rows="8"></textarea>
-        </div>
-        <br>
-
-        </form>
-        <div class="label5">
-            <li>Describe the issue you have encountered here if found.</li>
-            <form action="">
-                <textarea class="textarea" placeholder="Describe here." cols="70" rows="8"></textarea>
-        </div>
-        <br>
-
-        <h2 id="u">Rate us out of 5 stars</h2>
-        <br>
-
-
-        <!--the stars-->
-        <div class="star-rating">
-            <input id="star-5" type="radio" name="rating" value="star-5">
-            <label for="star-5" title="55 stars">
-                <!--نفس قيمة id-->
-                <i class="fa-solid fa-star" aria-hidden="true"></i>
-            </label>
-
-            <input id="star-4" type="radio" name="rating" value="star-4">
-            <label for="star-4" title="4 stars">
-                <!--نفس قيمة id-->
-                <i class="fa-solid fa-star" aria-hidden="true"></i>
-            </label>
-
-            <input id="star-3" type="radio" name="rating" value="star-3">
-            <label for="star-3" title="3 stars">
-                <!--نفس قيمة id-->
-                <i class="fa-solid fa-star" aria-hidden="true"></i>
-            </label>
-
-            <input id="star-2" type="radio" name="rating" value="star-2">
-            <label for="star-2" title="2 stars">
-                <!--نفس قيمة id-->
-                <i class="fa-solid fa-star" aria-hidden="true"></i>
-            </label>
-
-            <input id="star-1" type="radio" name="rating" value="star-1">
-            <label for="star-1" title="1 stars">
-                <!--نفس قيمة id-->
-                <i class="fa-solid fa-star" aria-hidden="true"></i>
-            </label>
-        </div>
-
-        <br>
-
-        <a href="accepted.html" class="send"  value="send" onclick="myfunction()">send</a>
-        <p id="demo"></p>
-
-        <script>
-            function myfunction() {
-                var txt;
-                if (confirm("Are you sure about this desicion?")) {
-                    txt = "Thanks for your time."
-                }
-                else {
-                    txt = "see your reviews again."
-                }
-                document.getElementById("demo").innerHTML = txt;
-            }
-        </script>
-
-
-        </form>
-
-    </ol>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <p>join us</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social"></i></a>
-                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter social"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
-                <a href="index.html"><i class="fa-solid fa-house social"></i></a>
+    <div class="feed">
+    <div class="container1">
+        <form action="">
+            <div class="form">
+                <h2>Send Feedback</h2>
+                <div class="user">
+                    <input class="inp" type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="username">
+                    <input class="inp" type="text" placeholder="Enter Username">
+                </div>
+                <textarea placeholder="Enter Your Message"></textarea>
             </div>
-            <p class="copyright">
-                copyright 2022 &copy; <span>Designers</span> All rights reserved
-            </p>
+        </form>
+        <div class="container-rating">
+            <div class="star-widget">
+                <input class="inp"type="radio" name="rate" id="rate-5">
+                <label  for="rate-5" class="fa-solid fa-star lab"></label>
+                <!--الفور نفس قيمة ال اي دي-->
+                <input class="inp" type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fa-solid fa-star lab"></label>
+                <!--الفور نفس قيمة ال اي دي-->
+                <input class="inp" type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fa-solid fa-star lab"></label>
+                <!--الفور نفس قيمة ال اي دي-->
+                <input class="inp" type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fa-solid fa-star lab"></label>
+                <!--الفور نفس قيمة ال اي دي-->
+                <input class="inp" type="radio" name="rate" id="rate-1">
+                <label  for="rate-1" class="fa-solid fa-star lab"></label>
+                <!--الفور نفس قيمة ال اي دي-->
+            </div>
+        </div>
+
+        <div class="sub">
+            <input class="inp"type="submit" value="submit" onclick="myfunction()">
         </div>
     </div>
-    <script src="js/all.min.js"></script>
+</div>
+    <div>
+        <form>
+            <script>
+                function myfunction() {
+                    var txt;
+                    if (confirm("Are you sure about this desicion?")) {
+                        txt = "Thanks for your time."
+                    }
+                    else {
+                        txt = "see your reviews again."
+                    }
+                    document.getElementById("demo").innerHTML = txt;
+                }
+            </script>
+            <div class="footer">
+                <div class="container">
+                    <p>join us</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social"></i></a>
+                        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter social"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
+                        <a href="index.html"><i class="fa-solid fa-house social"></i></a>
+                    </div>
+                    <p class="copyright">
+                        copyright 2022 &copy; <span>Designers</span> All rights reserved
+                    </p>
+                </div>
+            </div>
+            <script src="js/all.min.js"></script>
 </body>
 <script>
     var icon = document.getElementById("icon");
