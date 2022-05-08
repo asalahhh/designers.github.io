@@ -11,9 +11,11 @@ body {
   text-transform: capitalize;
   box-sizing: border-box;
 }
-.container2{
+
+.container2 {
   background-color: var(--seconder_color);
 }
+
 /* colors in light mode */
 :root {
   --main_color: #eee;
@@ -21,8 +23,8 @@ body {
   --third_color: #4b7be5;
   --sub_color: white;
   --wallpaper: url(../images/daka-dibuja-6-medio-dia.jpg);
-  --main-font:'Montserrat', sans-serif;
-  --hover-color:orange;
+  --main-font: 'Cairo', sans-serif;
+  --hover-color: orange;
 }
 
 /* colors in dark mode*/
@@ -33,7 +35,7 @@ body {
   --sub_color: hsl(221deg 95% 60%);
   --wallpaper: url(../images/daka-dibuja-2-media-noche.jpg);
   --main-font: "Lobster", cursive;
-  --hover-color:black;
+  --hover-color: black;
 }
 
 .clr {
@@ -44,6 +46,7 @@ body {
   width: 95%;
   margin: auto;
 }
+
 .eye {
   color: var(--sub_color);
 }
@@ -54,12 +57,11 @@ body {
   margin: -13px 0 10px;
   font-weight: 300;
   font-size: 40px;
-  
 }
 
 .search {
   position: relative;
-  
+
   font-size: 15px;
   font-weight: bold;
   background-color: var(--sub_color);
@@ -69,6 +71,7 @@ body {
   padding: 7px;
   /* transition: 0.3s; ==> in body directly */
 }
+
 /* .logcont{
   width: 200px;
   position: relative;
@@ -86,21 +89,24 @@ body {
 .click {
   border: none;
   outline: none;
-  transition: 0.3s;
   display: flex;
 }
+
 .list {
   position: absolute;
   transform: scaleY(0);
   transform-origin: top;
 }
+
 .newlist {
   transform: scaleY(1);
 }
+
 .log {
   background-color: rebeccapurple;
   padding: 20px;
 }
+
 .log:hover {
   background: yellowgreen;
   transform: scale(1.1);
@@ -109,6 +115,7 @@ body {
 .search:focus {
   outline: 1px solid var(--seconder_color);
 }
+
 /* .search:focus {
   background-color: var(--sub_color);
   outline: 1px solid var(--seconder_color);
@@ -171,9 +178,11 @@ header {
 
   z-index: 1000;
 }
+
 .about-text p {
   color: var(--sub_color);
 }
+
 header a {
   font-weight: bold;
   color: var(--seconder_color);
@@ -212,11 +221,11 @@ header a:hover {
 
 /* Cart */
 
-.cart {
+/* .cart {
   font-weight: 100;
   position: fixed;
   right: -100%;
-  /* right: 0; */
+  right: 0;
   width: 20%;
   min-height: 45%;
   padding: 20px;
@@ -259,9 +268,9 @@ header a:hover {
   text-transform: uppercase;
 }
 
-/* .cart-price {
+.cart-price {
   font-weight: 600;
-} */
+}
 
 .cart-quantity {
   border: 1px solid red;
@@ -338,6 +347,12 @@ header a:hover {
   font-size: 1.7rem;
   color: red;
   cursor: pointer;
+} */
+
+.cart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .footer {
@@ -346,7 +361,6 @@ header a:hover {
   color: var(--seconder_color);
   text-align: center;
   margin-bottom: -10px;
-  
 }
 
 /* footer::before {
@@ -359,22 +373,20 @@ header a:hover {
   background-color: rgb(0 0 0 / 70%);
 } */
 
-
-
 .footer p:not(.copyright) {
   padding: 20px;
   border-bottom: 1px solid var(--seconder_color);
   font-size: 22px;
   width: fit-content;
-  margin: 20px  auto;
+  margin: 20px auto;
 }
 
 .footer .social-icons .social {
   padding: 10px 10px;
-  
+  color: var(--seconder_color);
 }
 
-.footer a:hover{
+.footer a:hover {
   color: red;
   font-weight: bold;
 }
@@ -382,9 +394,6 @@ header a:hover {
 .footer .copyright {
   margin-top: 20px;
   margin-bottom: 10px;
-}
-.footer .container .social-icons a:hover{
-  color: var(--hover-color);
 }
 
 .footer .copyright span {
@@ -396,19 +405,4 @@ header a:hover {
   margin: 0;
   width: 30px;
   cursor: pointer;
-}
-.accep{
-  color: var(--sub_color);
-}
-.accep a{
-  color: yellow;
-  font-weight: bold;
-}
-.accep .lin{
-    
-    background: var(--seconder_color);
-}
-.accep .lin:hover{
-  border: 1px solid red;
-  background: transparent;
 }

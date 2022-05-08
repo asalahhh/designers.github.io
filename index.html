@@ -6,7 +6,7 @@
   <meta name="describtion" content="Website for shopping" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/1.Main_Theme.css" />
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="cart">
+<!--   <div class="cart">
     <h2 class="cart-title">Your Cart</h2>
     <div class="cart-content">
     </div>
@@ -26,8 +26,8 @@
     <button type="button" class="buy-btn">Buy Now</button>
     <button type="button" class="cart-page">Cart page</button>
     <i class='bx bx-x' id="close-cart"></i>
-    <!-- <button id="close-cart"><i class="fa fa-close"></i></button> -->
-  </div>
+    <button id="close-cart"><i class="fa fa-close"></i></button>
+  </div> -->
   <!-- start header -->
   <header>
     <div class="container">
@@ -71,7 +71,14 @@
           </li>
         </ul>
       </nav>
-      
+      <!-- <div class="container2">
+          <ul>
+            <li>
+              <i class="fa-solid fa-ski-boot-ski"></i> 
+              <span>books</span>
+            </li>
+          </ul>
+        </div> -->
     </div>
   </header>
   <div class="container2">
@@ -177,15 +184,15 @@
             <div class="badge">Hot</div>
             <div class="product-tumb">
               <img src="images/726d2813-892c-420a-beeb-9e699b66a724.jpg"
-                alt="">
+                class="product-img">
             </div>
-            <div class="product-details">
-              <label class="product-catagory">Time Asia Ed. TIME 100 COMPANIES , book</label>
+            <div class="product-details" id="1">
+              <label class="product-catagory">Time Asia Ed. TIME 100 COMPANIES</label>
               <div class="product-bottom-details">
-                <div class="product-price"><small>$240</small>$80</div>
+                <div class="product-price"><small>$240</small><span>$80</span></div>
                 <div class="product-links">
                   <a href=""><i class="fa fa-heart"></i></a>
-                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  <button class="cart-button" ><i class="fa fa-shopping-cart"></i></button>
                 </div>
               </div>
             </div>
@@ -199,24 +206,24 @@
     <!-- start product 2 -->
     <li>
       <div>
-        <a href="12.product.html">
+        <a href="#">
           <div class="special-heading" id="pc">
             computers
           </div>
           <div class="product-card">
             <div class="badge">Hot</div>
             <div class="product-tumb">
-              <img src="images/R.jpg" alt="">
+              <img src="images/R.jpg" class="product-img">
             </div>
             <div class="product-details">
               <label class="product-catagory c1">ZOTAC GAMING GeForce RTX 3090
                 Ti
                 AMP Extreme Holo</label>
               <div class="product-bottom-details">
-                <div class="product-price"><small>$2400</small>$1900</div>
+                <div class="product-price"><small>$2400</small><span>$1900</span></div>
                 <div class="product-links">
                   <a href=""><i class="fa fa-heart"></i></a>
-                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  <button class="cart-button" ><i class="fa fa-shopping-cart"></i></button>
                 </div>
               </div>
             </div>
@@ -238,15 +245,15 @@
           <div class="product-card">
             <div class="badge">Hot</div>
             <div class="product-tumb">
-              <img src="images/shoes.png" alt="">
+              <img src="images/shoes.png" class="product-img">
             </div>
             <div class="product-details">
               <label class="product-catagory c1">ADIDAS EGYPT, RUNNING SHOSES</label>
               <div class="product-bottom-details">
-                <div class="product-price"><small>$2000</small>$1750</div>
+                <div class="product-price"><small>$2000</small><span>$1750</span></div>
                 <div class="product-links">
                   <a href=""><i class="fa fa-heart"></i></a>
-                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  <button class="cart-button" ><i class="fa fa-shopping-cart"></i></button>
                 </div>
               </div>
             </div>
@@ -268,15 +275,16 @@
             <div class="product-card">
               <div class="badge">Hot</div>
               <div class="product-tumb">
-                <img src="images/carousel-1(1).jpg" alt="">
+                <img src="images/carousel-1(1).jpg" class="product-img">
               </div>
               <div class="product-details">
-                <label class="product-catagory c1">food ,all kinds of burger and snacks</label>
+                <label class="product-catagory c1">ADIDAS EGYPT, RUNNING
+                  SHOSES</label>
                 <div class="product-bottom-details">
-                  <div class="product-price"><small>$100</small>$40</div>
+                  <div class="product-price"><small>$240</small><span>$80</span></div>
                   <div class="product-links">
                     <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    <button class="cart-button" ><i class="fa fa-shopping-cart"></i></button>
                   </div>
                 </div>
               </div>
@@ -297,16 +305,16 @@
             <div class="product-card">
               <div class="badge">Hot</div>
               <div class="product-tumb">
-                <img src="images/0.png" alt="">
+                <img src="images/0.png" class="product-img">
               </div>
               <div class="product-details">
-                <label class="product-catagory">iphone 13 pro max ,mobile</label>
+                <label class="product-catagory">IPHONE 13 PRO MAX</label>
                 <div class="product-bottom-details">
-                  <div class="product-price"><small>EGP 40,000.00</small>EGP
-                    35,999.00</div>
+                  <div class="product-price"><small>EGP 40,000.00</small><span>
+                    35,999.00</span></div>
                   <div class="product-links">
                     <a href=""><i class="fa fa-heart"></i></a>
-                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    <button class="cart-button" ><i class="fa fa-shopping-cart"></i></button>
                   </div>
                 </div>
               </div>
@@ -322,10 +330,10 @@
     <div class="container">
       <p>join us</p>
       <div class="social-icons">
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social"></i></a>
-        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter social"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
-        <a href="index.html"><i class="fa-solid fa-house social"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook social"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter social"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram social"></i></a>
+        <a href="#"><i class="fa-solid fa-house social"></i></a>
       </div>
       <div class="copyright">
         copyright 2022 &copy; <span>Designers</span> All rights reserved
@@ -338,24 +346,10 @@
   <script src="js/all.min.js"></script>
   
 </body>
-<script>
-  var icon = document.getElementById("icon");
-  icon.onclick = function () {
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-      icon.src = "images/dark theme icon/146199.png";
-    } else {
-      icon.src =
-        "images/dark theme icon/download-icon-Moon-1320568043578978300_256.ico";
-    }
-  };
-  let click = document.querySelector('.click');
-  let list = document.querySelector('.list');
-  click.addEventListener("click", () => {
-    list.classList.toggle('newlist');
-  })
-</script>
-<script src="js/cart.js" async></script>
+<!-- Dark Theme JS -->
+<script src="js/Theme.js"></script>
+
+<script src="js/cart.js"></script>
 <script>
   function search() {
     var sl = document.getElementById("sl");
