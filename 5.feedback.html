@@ -52,19 +52,12 @@
                     </li>
                 </ul>
             </nav>
-            <!-- <div class="container2">
-            <ul>
-                <li>
-                <i class="fa-solid fa-ski-boot-ski"></i> 
-                <span>books</span>
-                </li>
-            </ul>
-            </div> -->
+            
         </div>
     </header>
     <div class="feed">
     <div class="container1">
-        <form action="">
+        <form action="accepted.html">
             <div class="form">
                 <h2>Send Feedback</h2>
                 <div class="user">
@@ -75,7 +68,7 @@
                 </div>
                 <textarea placeholder="Enter Your Message"></textarea>
             </div>
-        </form>
+        
         <div class="container-rating">
             <div class="star-widget">
                 <input class="inp"type="radio" name="rate" id="rate-5">
@@ -98,6 +91,7 @@
 
         <div class="sub">
             <input class="inp"type="submit" value="submit" onclick="myfunction()">
+        </form>
         </div>
     </div>
 </div>
@@ -144,7 +138,7 @@
     };
     let click = document.querySelector('.click');
     let list = document.querySelector('.list');
-    click.addEventListener("click", () => {
+    click.addEventListener("click", function() {
         list.classList.toggle('newlist');
     })
 </script>

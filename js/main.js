@@ -27,10 +27,6 @@ document.getElementById("eye").onclick = function () {
     var x = document.getElementById("pass");
     var y = document.getElementById("hide1");
     var z = document.getElementById("hide2");
-    if (x.value === "") {
-
-        z.style.display = "none";
-    }
     if (x.type === 'password') {
         x.type = "text";
         y.style.display = "block";
