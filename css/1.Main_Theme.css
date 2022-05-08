@@ -58,7 +58,10 @@ body {
   font-weight: 300;
   font-size: 40px;
 }
-
+#wrong{
+  color: red;
+  font-weight: bold;
+}
 .search {
   position: relative;
 
