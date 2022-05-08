@@ -1,3 +1,4 @@
+console.log("Done")
 let cart_button = document.getElementsByClassName("cart-button");
 /* let item_Name = document.getElementsByClassName("item-name"); */
 let price = document.getElementsByClassName("product-price");
@@ -5,16 +6,25 @@ let img = document.getElementsByClassName("product-img");
 let arr_Name = [];
 let arr_Price = [];
 let arr_img = [];
-let cart = cart_button;
-for (let i = 0; i < cart_button.length; i++) {
-  cart[i].onclick = function () {
-    arr_Price.push(price[i].getElementsByTagName("span")[0].innerHTML);
-    arr_img.push(img[i].getAttribute("src"));
-    localStorage.setItem("price", arr_Price);
-    localStorage.setItem("img", arr_img);
-    alert(arr_Price);
-  };
+try {
+  itemsAdd();
+  cal();
 }
+finally {
+  let cart = cart_button;
+  for (let i = 0; i < cart_button.length; i++) {
+    cart[i].onclick = function () {
+      arr_Price.push(price[i].getElementsByTagName("span")[0].innerHTML);
+      arr_img.push(img[i].getAttribute("src"));
+      localStorage.setItem("price", arr_Price);
+      localStorage.setItem("img", arr_img);
+      /* alert(arr_Price); */
+
+    };
+  
+  }
+}
+
 function itemsAdd() {
   let arrName = [];
   let arrPrice = [];
@@ -25,24 +35,56 @@ function itemsAdd() {
   /* arrName = localStorage.getItem("name").split(","); */
   arrPrice = localStorage.getItem("price").split(",");
   arrPic = localStorage.getItem("img").split(",");
-  for (let i = 0; i < arrpic.length; i++) {
+  console.log("done")
+  for (let i = 0; i < arrPic.length; i++) {
+    
     let table = document.getElementsByTagName("table")[0];
     let row = table.insertRow(table.rows.length);
     var cell1 = row.insertCell(0);
+    console.log(cell1);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    var cell5 = row.insertCell(4);
-    var cell6 = row.insertCell(5);
 
-    cell1.innerHTML = `<td> <i class="far fa-times-circle" ></i></td>`;
-    cell2.innerHTML = `<td><img class="img_tb"  src="${arrPic[i]}" alt=""></td>`;
-    cell3.innerHTML = `<td>${arrName[i]}</td>`;
-    cell4.innerHTML = `<td class="${class1}" ><span>${arrPrice[i]}</span>$</td>`;
-    cell4.classList.add("price");
-    cell5.innerHTML = `<td><input class="${class2}" type="number" value="1" min="0"></td>`;
-    cell5.classList.add("inp_val");
-    cell6.innerHTML = `<td class="${class3}"><span>${arrPrice[i]}</span>$</td>`;
-    cell6.classList.add("subtotal");
+    cell1.innerHTML = `<td><div class="cart-info">
+              <img class="cart-img" src="${arrPic[i]}" />
+              <div>
+                <p class="cart-name"></p>
+                <small class="cart-price">Price: ${arrPrice[i]}</small>
+                <br />
+                <button href="" class="rmv"><i class='bx bxs-trash-alt'></i></button>
+              </div>
+            </div>
+          </td>`;
+    cell2.innerHTML = `<td><input type="number" value="1" /></td>`;
+    cell3.innerHTML = `<td class  ="subitem">${arrPrice[i]}</td>`;
+    cell3.classList.add("subitem")
   }
+}
+
+let remove = document.getElementsByClassName("rmv");
+for (let i = 0; i < remove.length; i++){
+  let btn = remove[i];
+  btn.onclick = function(e) {
+    e.preventDefault();
+    btn.parentElement.parentElement.parentElement.parentElement.remove();
+    cal();
+  }
+  }
+  
+
+  function cal() { 
+      let sub = document.getElementById("sub");
+  let tax = document.getElementById("tax");
+  let total = document.getElementById("total");
+  let subitem = document.getElementsByClassName("subitem");
+  let totalNo = 0;
+  console.log(subitem.length)
+  for (let i = 0; i < subitem.length; i++)
+  {
+   totalNo += +(subitem[i].innerText.split("$")[1])
+  }
+  sub.innerText = totalNo;
+  let taxNo = 0.025 * totalNo;
+  tax.innerText = taxNo
+  total.innerText = taxNo + totalNo 
 }

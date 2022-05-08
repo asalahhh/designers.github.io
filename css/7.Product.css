@@ -4,6 +4,38 @@
     padding: 78px 0px;
     
 }
+.prod-1 {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.small-img-row {
+    display: flex;
+    justify-content: space-around;
+}
+.col-2 img {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.prod-1 .col-2 {
+    padding: 20px;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    margin: 25px 0;
+}
 .about img{
     height: auto;
     width: 420px;
