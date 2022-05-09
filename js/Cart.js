@@ -55,8 +55,8 @@ function itemsAdd() {
               </div>
             </div>
           </td>`;
-    cell2.innerHTML = `<td><input type="number" value="1" /></td>`;
-    cell3.innerHTML = `<td class  ="subitem">${arrPrice[i]}</td>`;
+    cell2.innerHTML = `<td><input type="number" value="1"/></td>`;
+    cell3.innerHTML = `<td class="subitem">${arrPrice[i]}</td>`;
     cell3.classList.add("subitem")
   }
 }

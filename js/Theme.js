@@ -11,6 +11,6 @@ icon.onclick = function () {
 };
 let click = document.querySelector(".click");
 let list = document.querySelector(".list");
-click.addEventListener("click", () => {
+click.addEventListener("mouseout", function()  {
   list.classList.toggle("newlist");
 });

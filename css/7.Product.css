@@ -10,10 +10,13 @@
     margin-top: 40px;
 }
 .row {
+    
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
+    flex-direction: row;
+
 }
 .small-img-row {
     display: flex;
