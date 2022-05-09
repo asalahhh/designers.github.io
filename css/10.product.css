@@ -45,13 +45,23 @@
 
 }
 
-.text a {
+.text .x {
     text-decoration: none;
     background: #fff;
     color: #111;
     padding: 8px 15px;
     border-radius: 20px;
     position: absolute;
+    
+
+
+}
+.text .x:hover{
+    transform: scale=(2);
+    cursor: pointer;
+    transition: 1s ease ;
+    background-color: gray;
+    font-weight: bolder;
 
 
 }
@@ -62,9 +72,9 @@
 }
 
 .image img {
-    width: 250px;
-    margin-top: 87px;
+    width: 300px;
     margin-left: 152px;
+    padding-top: 150px;
 }
 
 .icons {
