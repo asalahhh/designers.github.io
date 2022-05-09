@@ -20,7 +20,7 @@ finally {
       localStorage.setItem("img", arr_img);
       /* alert(arr_Price); */
     };
-  
+
   }
 }
 
@@ -36,7 +36,7 @@ function itemsAdd() {
   arrPic = localStorage.getItem("img").split(",");
   console.log("done")
   for (let i = 0; i < arrPic.length; i++) {
-    
+
     let table = document.getElementsByTagName("table")[0];
     let row = table.insertRow(table.rows.length);
     var cell1 = row.insertCell(0);
@@ -61,28 +61,27 @@ function itemsAdd() {
 }
 
 let remove = document.getElementsByClassName("rmv");
-for (let i = 0; i < remove.length; i++){
+for (let i = 0; i < remove.length; i++) {
   let btn = remove[i];
-  btn.onclick = function(e) {
+  btn.onclick = function (e) {
     e.preventDefault();
     btn.parentElement.parentElement.parentElement.parentElement.remove();
     cal();
   }
-  }
+}
 
-  function cal() { 
+function cal() {
   let sub = document.getElementById("sub");
   let tax = document.getElementById("tax");
   let total = document.getElementById("total");
   let subitem = document.getElementsByClassName("subitem");
   let totalNo = 0;
   /* console.log(subitem.length) */
-  for (let i = 0; i < subitem.length; i++)
-  {
-   totalNo += +(subitem[i].innerText.split("$")[1])
+  for (let i = 0; i < subitem.length; i++) {
+    totalNo += +(subitem[i].innerText.split("$")[1])
   }
   sub.innerText = totalNo;
   let taxNo = 0.025 * totalNo;
   tax.innerText = taxNo
-  total.innerText = taxNo + totalNo 
+  total.innerText = taxNo + totalNo
 }
