@@ -1,4 +1,4 @@
-console.log("Done")
+/* console.log("Done") */
 let cart_button = document.getElementsByClassName("cart-button");
 /* let item_Name = document.getElementsByClassName("item-name"); */
 let price = document.getElementsByClassName("product-price");
@@ -19,7 +19,6 @@ finally {
       localStorage.setItem("price", arr_Price);
       localStorage.setItem("img", arr_img);
       /* alert(arr_Price); */
-
     };
   
   }
@@ -70,15 +69,14 @@ for (let i = 0; i < remove.length; i++){
     cal();
   }
   }
-  
 
   function cal() { 
-      let sub = document.getElementById("sub");
+  let sub = document.getElementById("sub");
   let tax = document.getElementById("tax");
   let total = document.getElementById("total");
   let subitem = document.getElementsByClassName("subitem");
   let totalNo = 0;
-  console.log(subitem.length)
+  /* console.log(subitem.length) */
   for (let i = 0; i < subitem.length; i++)
   {
    totalNo += +(subitem[i].innerText.split("$")[1])

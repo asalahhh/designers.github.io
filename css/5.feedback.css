@@ -26,7 +26,9 @@
 
 
 
-
+h3{
+    text-align: center;
+}
 
 .form{
     margin: 30px;
@@ -132,13 +134,15 @@ display: none;
 .star-widget .inp:not(:checked) ~ .lab:hover ~ .lab{
     color: #fd4;
 }
-
+.container-rating input[type='radio']:checked~label{
+color:#fd4 ;
+}
 
 .inp:checked ~ .lab{
     color: #fd4;
 }
 
-.inp#rate-5checked ~ .lab{
+.inp#rate-5:checked ~ label{
     color: #fe7;
     text-shadow: 0 0 20px;
 }
